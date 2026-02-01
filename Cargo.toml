@@ -33,6 +33,7 @@ tun-rs = { version = "=2.7.3", features = ["async_tokio"] } # pinned audited ver
 socket2 = { version = "^0.6.0", features = ["all"] }
 bytes = "^1.4"
 ipnet = { version = "^2.7", features = ["serde"] }
+route_manager = { version = "0.2" }
 
 # Tokio
 tokio = { version = "^1.44.2", features = [

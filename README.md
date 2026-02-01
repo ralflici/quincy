@@ -113,6 +113,7 @@ For more information, see [aws-lc-rs build instructions](https://github.com/aws/
 ### Build features
 - `jemalloc`: Uses the jemalloc memory allocator on UNIX systems for improved performance [default: **enabled**]
 - `offload`: Enables GSO/GRO offload optimization for TUN interfaces on Linux [default: **enabled**]
+- `route-manager`: Uses native OS APIs for client route management instead of shell commands [default: **disabled**]
 
 ## Usage
 Quincy provides a couple of binaries based on their intended use:

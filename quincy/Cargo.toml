@@ -20,6 +20,7 @@ path = "src/lib.rs"
 default = []
 offload = []
 jemalloc = ["jemallocator"]
+route-manager = ["dep:route_manager"]
 
 [dependencies]
 # Quinn
@@ -30,6 +31,7 @@ tun-rs = { workspace = true }
 socket2 = { workspace = true }
 bytes = { workspace = true }
 ipnet = { workspace = true }
+route_manager = { workspace = true, optional = true }
 
 # Tokio
 tokio = { workspace = true }

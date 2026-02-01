@@ -31,6 +31,10 @@ jobs:
         name: Test with coverage
         env:
           QUINCY_CRYPTO__KEY_EXCHANGE: ${{ matrix.crypto }}
+      - run: cargo test --no-default-features --features=route-manager,jemalloc -p quincy-client
+        name: Test with route-manager feature
+        env:
+          QUINCY_CRYPTO__KEY_EXCHANGE: ${{ matrix.crypto }}
       - uses: codecov/codecov-action@v4
         name: Upload coverage to Codecov
         env:

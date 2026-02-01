@@ -24,6 +24,7 @@ path = "src/lib.rs"
 default = ["offload", "jemalloc"]
 offload = ["quincy/offload"]
 jemalloc = ["quincy/jemalloc"]
+route-manager = ["quincy/route-manager"]
 
 [dependencies]
 quincy = { workspace = true }

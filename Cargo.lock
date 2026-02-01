@@ -3530,6 +3530,7 @@ dependencies = [
  "jemallocator",
  "nu-ansi-term",
  "quinn",
+ "route_manager",
  "rustls",
  "rustls-pemfile",
  "serde",
